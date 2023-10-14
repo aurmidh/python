@@ -26,3 +26,11 @@ a = int(input("podaj liczbe a"))
 b = int(input("podaj druga liczbe b"))
 c = int(input("podaj druga liczbe c"))
 d = (a+(2*b)/4)
+
+#5
+import math
+print(math.pi)
+print(math.sqrt(4))
+print(math.pow(2,3))
+print(math.cell(2.566))
+
