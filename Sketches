@@ -34,3 +34,106 @@ print(math.sqrt(4))
 print(math.pow(2,3))
 print(math.cell(2.566))
 
+#6
+a=input("podaj pierwszy przysmak")
+b=input("podaj drugi przysmak")
+print(a+b)
+
+
+#7
+a=int(input("summa paragonu"))
+b=a*15/100
+c=a*20/100
+print(b,c)
+
+#8
+a=int(input("podaj cene samochodu"))
+b=a*12/100
+c=100
+d=a*5/100
+e=200
+f=b+c+d+e
+print("wszystkie oplaty wynosza", f)
+s=a+f
+print("calkowita cena wynosi", s)
+
+#9
+a=int(input("podaj pierwsza liczbe"))
+b=int(input("podaj druga liczbe"))
+c=input("wybierz co chezs zribic dodac, odjac, mnozyc czy podzielic")
+if c=="dodac":
+    print(a+b)
+if c=="odjac":
+    print(a-b)
+if c=="mnozyc":
+    print(a*b)
+if c=="podzielic":
+    print(a/b)
+    
+    
+#10
+import math
+a=int(input("podaj pierwsza liczbe a"))
+b=int(input("podaj pierwsza liczbe b"))
+c=int(a*a+b*b)
+print (math.sqrt(c))
+
+#11
+a=int(input("podaj czas w minutach"))
+print(a*60)
+b=int(input("podaj czas w godzinach"))
+print(b*60*60)
+
+#12
+print("Zalozmy ze a>0, b>0, c>0")
+a=int(input("podaj pierwsza liczbe a"))
+b=int(input("podaj pierwsza liczbe b"))
+c=int(input("podaj pierwsza liczbe c"))
+if a>0 and b>0 and c>0:
+    print((a*a)+(b*b)==(c*c))
+
+#13
+import random
+words=["sucsess", "pech", "milosc", "nowa praca", "niespodzinka"]
+random.shuffle(words)
+wynik=random.sample(words,1)
+print(wynik)
+
+
+#14
+for i in range(1,21):
+    print(i)
+
+#15
+a=0
+for i in range(2,101,2):
+    a=a+i
+print("a=",a)
+
+#16
+import random
+orzel=0
+reszka=0
+lista=["orzel","reszka"]
+for i in range(1,100):
+    c=random.choice(lista)
+    if c=="orzel":
+        orzel=orzel+1
+    else:
+        reszka=reszka+1
+print("orzel", orzel)
+print("reszka", reszka)
+
+
+#17
+import random
+liczba=random.randint(1,10)
+for i in range(3):
+    proba=int(input("podaj liczbe"))
+    if proba==liczba:
+        print("Udalo sie")
+    elif proba<liczba:
+        print("liczba jest wieksza")
+    else:
+        print("liczba jest mnejsza")
+    
